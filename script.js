@@ -76,7 +76,7 @@ const corsiTriennali = [
 		codice: 'L-18', 
 		nome: 'Economia Aziendale',
 		whatsapp: 'https://chat.whatsapp.com/K3XePfSWnRxGKMSeXUgD9n',
-		drive: 'https://drive.google.com/drive/folders/10veOI3n8x0Gb3TT5LZsgQf16rnGllDyA?usp=drive_link'
+		drive: 'https://drive.google.com/drive/folders/1Jc8MaUE6QvXrNT7ni8ZMPBHqWc2ylNYS?usp=sharing'
 	},
 	{ 
 		codice: 'L-19', 
@@ -100,7 +100,7 @@ const corsiTriennali = [
 		codice: 'L-24', 
 		nome: 'Scienze e Tecniche Psicologiche',
 		whatsapp: 'https://chat.whatsapp.com/DPW2w8HnyPCH886Dmcn7CJ',
-		drive: 'https://drive.google.com/drive/folders/1S6oUcIM4RWwjrco6VDWSYPmYaNa27w62?usp=drive_link'
+		drive: 'https://drive.google.com/drive/folders/1TyvQVSjL5jGYhvyb08U6k7Z_nEHFnUFl?usp=sharing'
 	},
 	{ 
 		codice: 'L-26', 
@@ -180,7 +180,7 @@ const corsiMagistrali = [
 	},
 	{ 
 		codice: 'LM-56', 
-		nome: 'Economiam Digital Data Analysis, Amministrazioni Pubbliche',
+		nome: 'Economia, Digital Data Analysis, Amministrazioni Pubbliche',
 		whatsapp: 'https://chat.whatsapp.com/JsTcv3jgLJo1Vjecub9XNT'
 	},
 	{ 
@@ -222,7 +222,9 @@ class ThemeManager {
 	}
 
 	init() {
-		const savedTheme = localStorage.getItem('theme') || 'light';
+		// ==================== MODIFICA ESEGUITA QUI ====================
+		const savedTheme = localStorage.getItem('theme') || 'dark';
+		// ===============================================================
 		this.setTheme(savedTheme);
 
 		if (this.themeToggle) {
